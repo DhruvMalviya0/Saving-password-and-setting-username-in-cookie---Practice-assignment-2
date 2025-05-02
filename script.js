@@ -19,7 +19,7 @@ function getRandomArbitrary(min, max) {
   if (cached) {
     return parseInt(cached);
   }
-
+  
   cached = Math.floor(Math.random() * (max - min) + min);
   store('original', cached.toString());
   return cached;
